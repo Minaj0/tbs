@@ -1,0 +1,50 @@
+[
+  {
+    "id": "shower-panels",
+    "title": "Shower Panel Collection",
+    "category": "Shower panels",
+    "description": "Rain showers, body-jet columns and waterfall panels.",
+    "year": "2026",
+    "pages": 11,
+    "bytes": 6615258,
+    "url": "catalogues/Hecuba_Shower_Panel_Catalogue_2026.pdf",
+    "filename": "Hecuba_Shower_Panel_Catalogue_2026.pdf",
+    "cover": "catalogues/shower-panels.jpg"
+  },
+  {
+    "id": "tile-washbasins",
+    "title": "Porcelain Washbasin Collection",
+    "category": "Tile washbasins",
+    "description": "Wall-hung and pedestal basins with a range of surfaces.",
+    "year": "2026",
+    "pages": 31,
+    "bytes": 11449429,
+    "url": "catalogues/Hecuba_Tile_Washbasin_Collection.pdf",
+    "filename": "Hecuba_Tile_Washbasin_Collection.pdf",
+    "cover": "catalogues/tile-washbasins.jpg"
+  },
+  {
+    "id": "basins",
+    "title": "The Basin Collection",
+    "category": "Basins",
+    "description": "Ceramic, glass, metal and more.",
+    "year": "2026",
+    "pages": 132,
+    "bytes": 23298076,
+    "url": "catalogues/hecuba-basin-collection-2026.pdf",
+    "filename": "hecuba-basin-collection-2026.pdf",
+    "cover": "catalogues/basins.jpg"
+  },
+  {
+    "id": "mirrors",
+    "title": "Mirror Collection",
+    "category": "Mirrors",
+    "description": "LED, framed and sculptural mirrors for considered spaces.",
+    "year": "2026",
+    "pages": 36,
+    "bytes": 25140104,
+    "url": "catalogues/hecuba-mirror-collection-2026-dark-glass.pdf",
+    "filename": "hecuba-mirror-collection-2026-dark-glass.pdf",
+    "cover": "catalogues/mirrors.jpg"
+  }
+]

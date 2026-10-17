@@ -1,0 +1,1 @@
+(()=>{const library=document.getElementById('hecuba-catalogues');document.querySelectorAll('[data-open-catalogues]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('dialog[open]').forEach(dialog=>dialog.close());library.showModal();library.querySelector('.close').focus({preventScroll:true});library.scrollTop=0}));})();
