@@ -13,3 +13,6 @@ footer.visit-footer{background:#0a2c58;border-top-color:var(--navy-line)}.visit-
 
 /* Unified navy palette */
 :root{--brand:#0a2c58;--bg:#0b2039;--surface:#102d4c;--surface-raised:#173b60;--muted:#c0cfdf}.hero-track .hero{background:radial-gradient(ellipse at 76% 40%,#214d7a 0%,#173d65 29%,#102f53 60%,#0a2c58 100%)}.hero h1 em{background-image:linear-gradient(110deg,#8fabc9,#f3f7fc 28%,#a5c2e0 48%,#fff 66%,#8eafd2)}.journey-sequence,.chapter-sticky{background:#102d4c}.section,.projects-section{background:#0e2946}.cabin-section{background:#123455}.project-invite{background:#102d4c}.brands-section{background:#102f4c}.hecuba-section{background:#0a2c58}.hecuba-copy h2 em,h2 em,em{color:#b5cee8}footer.visit-footer{background:#0a2c58}.visit-heading .button{background:#174574;border-color:#8fafd073}.visit-heading .button:hover{background:#24598e}
+
+/* Larger, more legible navigation links. */
+nav .navlinks{gap:28px}nav .navlinks a{font-size:11px;letter-spacing:1.1px;line-height:1.5;padding:12px 0}@media(max-width:1100px) and (min-width:801px){nav .navlinks{gap:16px}nav .navlinks a{font-size:9px;letter-spacing:.7px}nav{padding-left:4%;padding-right:4%}}
