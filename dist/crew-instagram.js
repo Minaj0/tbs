@@ -5,6 +5,9 @@
     prev = document.getElementById("crew-post-prev"),
     next = document.getElementById("crew-post-next"),
     count = document.getElementById("crew-post-count");
+  const mediaBoxes=[...track.querySelectorAll('.crew-post-media')];
+  const sizeEmbeds=new ResizeObserver(entries=>entries.forEach(({target,contentRect})=>target.style.setProperty('--embed-scale',String(contentRect.width/340))));
+  mediaBoxes.forEach(box=>sizeEmbeds.observe(box));
   let current = 0,
     queued = false;
   function update() {
