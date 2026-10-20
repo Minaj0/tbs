@@ -1,0 +1,1 @@
+(()=>{const rail=document.querySelector('.partner-marquee');if(!rail)return;if(!('IntersectionObserver' in window)){rail.classList.add('is-running');return}const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){rail.classList.add('is-running');observer.disconnect()}},{threshold:.1});observer.observe(rail)})();
