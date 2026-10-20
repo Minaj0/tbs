@@ -28,14 +28,14 @@
   {
     "id": "closer-look",
     "type": "image",
-    "title": "A closer look",
-    "src": "assets/works/bathroom-detail.jpg",
-    "alt": "Another view of the bathroom showing the rain shower, rounded window and backlit mirror",
-    "description": "A second perspective on the fittings, lighting and details that bring the room together.",
+    "title": "Sculpted texture",
+    "src": "assets/works/sculpted-basin.jpg",
+    "alt": "A dark ribbed pedestal basin with a slim black shelf, photographed during installation",
+    "description": "A sculptural ribbed pedestal basin and slim black shelf, captured as the space takes shape.",
     "details": [
-      "Rain shower",
-      "Backlit mirror",
-      "Wall-hung WC"
+      "Ribbed pedestal basin",
+      "Slim black shelf",
+      "Installation in progress"
     ]
   },
   {
