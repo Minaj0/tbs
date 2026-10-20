@@ -16,3 +16,8 @@ nav .navlinks{gap:28px}nav .navlinks a{font-size:11px;letter-spacing:1.1px;line-
 #hecuba .hecuba-logo img{filter:invert(1);mix-blend-mode:screen;opacity:1}
 @media(max-width:800px){#hecuba .hecuba-logo{max-width:300px}}
 @media(max-width:480px){#hecuba .hecuba-logo{max-width:260px}}
+
+#cabin-crew .sectiontop{align-items:center;flex-wrap:wrap;gap:24px}
+#cabin-crew .cabin-brand-logo{display:block;width:min(600px,65%);flex-shrink:0;line-height:0;mix-blend-mode:screen}
+#cabin-crew .cabin-brand-logo img{display:block;width:100%;height:auto;border-radius:0}
+@media(max-width:800px){#cabin-crew .cabin-brand-logo{width:min(100%,560px)}#cabin-crew .sectiontop{gap:16px}}
