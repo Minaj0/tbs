@@ -3,3 +3,5 @@
 
 /* Logos sit directly on the olive surface without cards or image backplates. */
 .partner-logo,.partner-logo-grohe{background:transparent;border:0;border-radius:0;box-shadow:none}.partner-logo-window img{filter:url(#partner-white-knockout) brightness(1.65)}.partner-logo-hecuba img,.partner-logo-jaquar img{filter:invert(1) url(#partner-dark-knockout)}.partner-logo-grohe img{filter:url(#partner-dark-knockout)}
+/* Soft corners for imagery, with logo backgrounds kept transparent. */
+:root{--image-radius:18px}.natural-step,.chapter-visual .compare,.natural-finish,.project-image,.hecuba-image,.cabin-photo,.catalogue-cover,.visit-map{border-radius:var(--image-radius);overflow:hidden}.natural-step>img,.project-image>img,.hecuba-image>img,.cabin-photo>img,#project-modal-image{border-radius:var(--image-radius)}.partner-logo{border-radius:18px;overflow:hidden}.partner-logo-window{border-radius:12px;overflow:hidden}.catalogue-cover img{border-radius:10px}@media(max-width:800px){:root{--image-radius:14px}.partner-logo{border-radius:14px}.partner-logo-window{border-radius:10px}}
