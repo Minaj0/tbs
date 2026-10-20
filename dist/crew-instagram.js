@@ -5,6 +5,10 @@
     prev = document.getElementById("crew-post-prev"),
     next = document.getElementById("crew-post-next"),
     count = document.getElementById("crew-post-count");
+  const progress=document.createElement('div');
+  progress.className='crew-film-progress';progress.setAttribute('role','progressbar');progress.setAttribute('aria-label','Instagram carousel position');progress.setAttribute('aria-valuemin','0');progress.setAttribute('aria-valuemax','100');
+  const fill=document.createElement('span');progress.append(fill);track.after(progress);
+  cards.forEach((card,i)=>{card.dataset.frame=String(i+1).padStart(2,'0');card.querySelector('.crew-post-meta>span').textContent=card.dataset.frame;});
   const mediaBoxes=[...track.querySelectorAll('.crew-post-media')];
   const sizeEmbeds=new ResizeObserver(entries=>entries.forEach(({target,contentRect})=>target.style.setProperty('--embed-scale',String(contentRect.width/340))));
   mediaBoxes.forEach(box=>sizeEmbeds.observe(box));
@@ -23,6 +27,11 @@
       }
     });
     current = nearest;
+    const range=track.scrollWidth-track.clientWidth;
+    const fraction=range>0?Math.max(0,Math.min(1,track.scrollLeft/range)):1;
+    progress.style.setProperty('--film-progress',String(fraction));
+    progress.setAttribute('aria-valuenow',String(Math.round(fraction*100)));
+    cards.forEach((card,i)=>card.classList.toggle('is-current',i===current));
     prev.disabled = track.scrollLeft < 5;
     next.disabled =
       track.scrollLeft >= track.scrollWidth - track.clientWidth - 5;
