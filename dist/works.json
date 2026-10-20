@@ -1,0 +1,69 @@
+[
+  {
+    "id": "warm-textures",
+    "type": "image",
+    "title": "Warm textures",
+    "src": "assets/works/warm-vanity.png",
+    "alt": "A completed vanity with an arched mirror, textured wall and illuminated niches",
+    "description": "An arched mirror, warm lighting and illuminated niches bring depth to this vanity space.",
+    "details": [
+      "Arched mirror",
+      "Illuminated niches",
+      "Textured wall"
+    ]
+  },
+  {
+    "id": "light-form",
+    "type": "image",
+    "title": "Light & form",
+    "src": "assets/works/bathroom-overview.jpg",
+    "alt": "Completed bathroom with a glass shower enclosure, arched mirror, pedestal basin and circular window",
+    "description": "A look inside the completed bathroom: a sculpted ceiling, glass shower enclosure and softly lit vanity.",
+    "details": [
+      "Glass shower enclosure",
+      "Pedestal basin",
+      "Ambient lighting"
+    ]
+  },
+  {
+    "id": "closer-look",
+    "type": "image",
+    "title": "A closer look",
+    "src": "assets/works/bathroom-detail.jpg",
+    "alt": "Another view of the bathroom showing the rain shower, rounded window and backlit mirror",
+    "description": "A second perspective on the fittings, lighting and details that bring the room together.",
+    "details": [
+      "Rain shower",
+      "Backlit mirror",
+      "Wall-hung WC"
+    ]
+  },
+  {
+    "id": "classic-details",
+    "type": "video",
+    "title": "Classic detailing",
+    "src": "assets/works/walkthrough-01.mp4",
+    "poster": "assets/works/classic-details-poster.png",
+    "alt": "Video of an ornate double vanity with a decorative mirror and gold-toned fittings",
+    "description": "A video walkthrough of a vanity with decorative cabinetry, a statement mirror and twin vessel basins.",
+    "details": [
+      "Decorative cabinetry",
+      "Twin basins",
+      "Video walkthrough"
+    ]
+  },
+  {
+    "id": "modern-warmth",
+    "type": "video",
+    "title": "Modern warmth",
+    "src": "assets/works/walkthrough-02.mp4",
+    "poster": "assets/works/modern-warmth-poster.png",
+    "alt": "Video of a softly lit bathroom vanity with a rectangular LED mirror and textured tiles",
+    "description": "Explore the lighting, textured surfaces and contemporary fittings in this completed space.",
+    "details": [
+      "LED mirror",
+      "Textured surfaces",
+      "Video walkthrough"
+    ]
+  }
+]
