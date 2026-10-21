@@ -5,6 +5,13 @@
     prev = document.getElementById("crew-post-prev"),
     next = document.getElementById("crew-post-next"),
     count = document.getElementById("crew-post-count");
+  // Only keep Instagram players alive near the viewport and visible in the rail.
+  let feedNearby=false;
+  const visibleTiles=new Set(), frames=[...track.querySelectorAll('iframe[data-src]')];
+  function syncPlayers(){frames.forEach(frame=>{const active=feedNearby&&!document.hidden&&visibleTiles.has(frame.closest('.crew-post'));if(active&&!frame.hasAttribute('src'))frame.src=frame.dataset.src;else if(!active&&frame.hasAttribute('src'))frame.removeAttribute('src')})}
+  new IntersectionObserver(entries=>{feedNearby=entries[0].isIntersecting;syncPlayers()},{rootMargin:'250px 0px'}).observe(track);
+  const tileObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting&&entry.intersectionRatio>.08)visibleTiles.add(entry.target);else visibleTiles.delete(entry.target)});syncPlayers()},{root:track,rootMargin:'0px',threshold:.08});
+  cards.forEach(card=>tileObserver.observe(card));document.addEventListener('visibilitychange',syncPlayers);
   const progress=document.createElement('div');
   progress.className='crew-film-progress';progress.setAttribute('role','progressbar');progress.setAttribute('aria-label','Instagram carousel position');progress.setAttribute('aria-valuemin','0');progress.setAttribute('aria-valuemax','100');
   const fill=document.createElement('span');progress.append(fill);track.after(progress);
